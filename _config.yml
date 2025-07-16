@@ -23,7 +23,7 @@ email: saikatsingha0q@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A collection of thoughts, research notes,  and technical writings. Exploring ideas at the intersection of technology and creativity.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://saikatsingha.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://Saikat-too.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Saikat-too
 
 # Build settings
