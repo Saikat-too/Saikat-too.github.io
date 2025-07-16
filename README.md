@@ -1,2 +1,2 @@
 # saikatsingha.github.io
-My inspired personal website . 
+Ny personal website . Inspired from some greats portfolio websites . 
