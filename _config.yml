@@ -1,0 +1,113 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Saikat Singha
+email: saikatsingha0q@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A collection of thoughts, research notes,  and technical writings. Exploring ideas at the intersection of technology and creativity.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://saikatsingha.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: Saikat-too
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Markdown processing
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# Google Analytics
+# google_analytics:
+
+# Custom settings
+show_excerpts: true
+
+# Collections
+collections:
+  blogs:
+    output: true
+    permalink: /blogs/:title/
+  notes:
+    output: true
+    permalink: /notes/:title/
+  thoughts:
+    output: true
+    permalink: /thoughts/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      math: true
+  - scope:
+      path: ""
+      type: "blogs"
+    values:
+      math: true
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      math: true
+  - scope:
+      path: ""
+      type: "thoughts"
+    values:
+      layout: thought
+      math: true
+
+# Content Security Policy
+webrick:
+  headers:
+    Content-Security-Policy: >-
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://utteranc.es https://www.gstatic.com https://*.firebaseio.com https://*.firebase.com https://*.googleapis.com https://d3js.org https://*.google-analytics.com https://*.googletagmanager.com https://www.googletagmanager.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://utteranc.es https://cdn.jsdelivr.net;
+      font-src 'self' data: https://fonts.gstatic.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com;
+      frame-src https://www.youtube-nocookie.com https://www.youtube.com https://utteranc.es;
+      connect-src 'self' https://api.github.com https://*.firebaseio.com https://*.firebase.com https://*.googleapis.com https://firestore.googleapis.com wss://*.firebaseio.com https://*.google-analytics.com https://www.google-analytics.com;
+      img-src 'self' data: blob: https://avatars.githubusercontent.com https://*.google-analytics.com https://www.google-analytics.com;
