@@ -1,2 +1,3 @@
-# saikatsingha.github.io
-Ny personal website . Inspired from some greats portfolio websites . 
+# Saikat's Personal Website
+
+Journey towards infinity and beyond.
