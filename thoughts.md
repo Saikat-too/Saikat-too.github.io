@@ -7,7 +7,7 @@ permalink: /thoughts/
 <div class="thoughts-container">
   <header class="thoughts-header">
     <h1 class="page-title">Thoughts</h1>
-    <p class="page-description">Space where I will write ,  I  deeply think about mostly life and cosmos.</p>
+    <p class="page-description">Space where I will write ,  I  deeply think about  life and cosmos.</p>
   </header>
 
   <div class="thoughts-grid">
