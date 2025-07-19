@@ -438,23 +438,23 @@ body,
 }
 
 // About section
-.about-section {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    margin-bottom: 4rem;
+//.about-section {
+//   display: flex;
+//   align-items: flex-start;
+//  gap: 2rem;
+//  margin-bottom: 4rem;
 
-    .about-content {
-        flex: 1;
+// .about-content {
+//    flex: 1;
 
-        h1 {
-            color: $heading-color;
-        }
+//  h1 {
+//     color: $heading-color;
+//  }
 
-        p {
-            color: $text-color;
+// p {
+//     color: $text-color;
 
-            a {
+/* a {
                 color: $brand-color;
                 transition: opacity 0.3s ease;
 
@@ -482,9 +482,9 @@ body,
         .wave-hand {
             display: block;
         }
-    }
+        }*/
 
-    @media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
         width: 100%;
         height: 350px;
         margin: 0 auto;
@@ -555,7 +555,7 @@ body,
         opacity: 0;
     }
 }
-
+*/
 // Latest post card
 .latest-post-card {
     background: $background-color;
@@ -705,7 +705,7 @@ body,
     }
 }
 
-.post-image-link {
+/*.post-image-link {
     display: block;
     text-decoration: none;
 }
@@ -726,7 +726,7 @@ body,
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-
+*/
 .post-content {
     padding: 1.5rem;
     display: flex;
@@ -876,7 +876,7 @@ body,
     }
 }
 
-.thought-image-container {
+/*.thought-image-container {
     width: 100%;
     padding-top: 56.25%;
     position: relative;
@@ -891,7 +891,7 @@ body,
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-}
+    }*/
 
 .thought-content {
     padding: 1.5rem;
