@@ -504,6 +504,25 @@ body,
     }
 }
 
+.about-section {
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem; // Reduced gap for mobile
+        margin-top: 0.5rem; // Less top margin on mobile
+    }
+}
+
+.about-section {
+    @media screen and (max-width: 768px) {
+        padding: 0 1rem; // Add some padding
+
+        .portrait-container {
+            margin-bottom: 1.5rem; // Add space between image and text
+        }
+    }
+}
+
 @keyframes popAndWave {
     0% {
         transform: translate(0, 30px) scale(0.2);
