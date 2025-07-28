@@ -436,25 +436,24 @@ body,
     font-size: 1.8rem;
     font-weight: 600;
 }
+// About Section
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 4rem;
 
-// About section
-//.about-section {
-//   display: flex;
-//   align-items: flex-start;
-//  gap: 2rem;
-//  margin-bottom: 4rem;
+    .about-content {
+        flex: 1;
 
-// .about-content {
-//    flex: 1;
+        h1 {
+            color: $heading-color;
+        }
 
-//  h1 {
-//     color: $heading-color;
-//  }
+        p {
+            color: $text-color;
 
-// p {
-//     color: $text-color;
-
-/* a {
+            a {
                 color: $brand-color;
                 transition: opacity 0.3s ease;
 
@@ -482,9 +481,8 @@ body,
         .wave-hand {
             display: block;
         }
-        }*/
-
-/*@media screen and (max-width: 768px) {
+    }
+    @media screen and (max-width: 768px) {
         width: 100%;
         height: 350px;
         margin: 0 auto;
@@ -504,21 +502,6 @@ body,
 
     @media screen and (max-width: 768px) {
         object-position: center -17px;
-    }
-}
-
-.wave-hand {
-    position: absolute;
-    top: 5px;
-    right: 50px;
-    font-size: 24px;
-    animation: popAndWave 4s infinite;
-    transform-origin: center;
-    display: none;
-
-    @media screen and (max-width: 768px) {
-        top: -2px;
-        right: 30px;
     }
 }
 
@@ -555,7 +538,7 @@ body,
         opacity: 0;
     }
 }
-*/
+
 // Latest post card
 .latest-post-card {
     background: $background-color;
