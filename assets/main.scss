@@ -400,7 +400,6 @@ body,
         border-top: 1px solid rgba($grey-color-light, 0.5);
         padding-top: 1rem;
         margin-top: 1rem;
-
         p {
             margin: 0;
         }
@@ -539,23 +538,6 @@ body,
     }
 }
 
-// Latest post card
-.latest-post-card {
-    background: $background-color;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 1.8rem;
-    border: 1px solid $heading-border-color;
-    margin-bottom: 1.5rem;
-
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-        border-color: $brand-color;
-    }
-}
-
 .post-meta {
     display: flex;
     justify-content: space-between;
@@ -630,7 +612,6 @@ body,
     }
 }
 
-// Blog page styles
 .blog-container {
     max-width: 1200px;
     margin: 0 auto;
