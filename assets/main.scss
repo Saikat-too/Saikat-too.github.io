@@ -1090,3 +1090,322 @@ body,
         padding: 1.5rem;
     }
 }
+
+// Additional Mobile Responsive Code - Add this to your existing SCSS
+
+// Enhanced mobile breakpoints
+@media screen and (max-width: 480px) {
+    html,
+    body {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    h5 {
+        font-size: 1em;
+    }
+
+    h6 {
+        font-size: 0.95em;
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
+
+    .page-content {
+        padding: 1rem 0;
+    }
+
+    .site-header {
+        min-height: 50px;
+        padding: 0 10px;
+    }
+
+    .site-title {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    .site-nav {
+        line-height: 50px;
+
+        .page-link {
+            line-height: 50px;
+            font-size: 15px;
+            margin-left: 0.8rem;
+        }
+    }
+
+    .wrapper {
+        padding: 0 10px;
+    }
+
+    blockquote {
+        padding: 8px;
+        font-size: 0.85em;
+        margin: 1em 0;
+    }
+
+    .container,
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .site-footer {
+        padding: 0.8rem 0;
+        font-size: 0.8rem;
+
+        .footer-row {
+            gap: 1rem;
+            margin-bottom: 0.6rem;
+        }
+
+        .footer-description {
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        .social-links {
+            gap: 0.6rem;
+            margin-left: 0.5rem;
+
+            a {
+                width: 32px;
+                height: 32px;
+                font-size: 1rem;
+
+                &:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+                }
+            }
+        }
+
+        .footer-copyright {
+            font-size: 0.7rem;
+            padding-top: 0.6rem;
+            margin-top: 0.6rem;
+        }
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .about-section {
+        gap: 0.8rem;
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+
+        .about-content {
+            text-align: left;
+        }
+    }
+
+    .portrait-container {
+        width: 100%;
+        height: 280px;
+        margin-bottom: 1rem;
+        max-width: 280px;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+    }
+
+    .portrait-image {
+        object-position: center -10px;
+    }
+
+    .post-meta {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+
+        .meta-left,
+        .meta-right {
+            gap: 0.5rem;
+        }
+    }
+
+    .post-title a {
+        font-size: 1.3rem;
+        line-height: 1.2;
+    }
+
+    .post-excerpt {
+        margin: 0.6rem 0;
+        line-height: 1.5;
+    }
+
+    .read-more {
+        font-size: 0.9rem;
+
+        &:hover {
+            transform: translateX(3px);
+        }
+    }
+
+    .view-all-container {
+        margin-top: 1rem;
+    }
+
+    .view-all-posts {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+
+        &:hover {
+            transform: translateY(-0.5px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    .blog-container {
+        padding: 0 0.5rem;
+    }
+
+    .blog-header {
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        margin: 0 0 0.3rem 0;
+    }
+
+    .page-description {
+        font-size: 1rem;
+        max-width: 100%;
+        line-height: 1.5;
+        padding: 0 0.5rem;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .thoughts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .thought-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .thought-footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .read-more {
+            margin-left: 0;
+            margin-top: 0.5rem;
+        }
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+}
+
+// Extra small devices (smaller phones)
+@media screen and (max-width: 360px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .portrait-container {
+        width: 100%;
+        height: 250px;
+        max-width: 250px;
+    }
+
+    .portrait-image {
+        object-position: center -5px;
+    }
+}
+
+// Enhanced mobile navigation (already exists but adding specific improvements)
+@media screen and (max-width: 480px) {
+    .site-nav {
+        input ~ .trigger {
+            min-width: 120px;
+            padding: 3px 8px;
+        }
+
+        input:checked ~ .trigger {
+            padding-bottom: 3px;
+        }
+
+        .page-link {
+            padding: 4px 8px;
+            margin-left: 15px;
+            font-size: 14px;
+        }
+
+        label[for="nav-trigger"] {
+            width: 28px;
+            height: 28px;
+        }
+
+        .menu-icon {
+            width: 28px;
+            height: 22px;
+            padding-top: 6px;
+
+            > svg {
+                width: 16px;
+                height: 13px;
+            }
+        }
+    }
+}
+
+// Mobile footer improvements (already exists but enhanced)
+@media screen and (max-width: 480px) {
+    .site-footer {
+        .footer-row {
+            gap: 1rem;
+        }
+
+        .footer-description {
+            font-size: 0.85rem;
+        }
+    }
+}
