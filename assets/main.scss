@@ -468,7 +468,7 @@ body,
     flex-shrink: 0;
     width: 300px;
     height: 300px;
-    border-radius: 12px;
+    border-radius: 20px;
     margin-top: var(--portrait-margin, 0rem);
     position: relative;
     background: transparent;
@@ -495,7 +495,7 @@ body,
     height: 100%;
     object-fit: cover;
     object-position: center 20%;
-    border-radius: 12px;
+    border-radius: 20px;
     display: block;
     position: relative;
 
@@ -688,28 +688,6 @@ body,
     }
 }
 
-/*.post-image-link {
-    display: block;
-    text-decoration: none;
-}
-
-.post-image-container {
-    width: 100%;
-    padding-top: 56.25%;
-    position: relative;
-    overflow: hidden;
-}
-
-.post-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-*/
 .post-content {
     padding: 1.5rem;
     display: flex;
@@ -814,178 +792,6 @@ body,
             margin-left: 0;
             margin-top: 0.5rem;
         }
-    }
-}
-
-// Thoughts page styles
-.thoughts-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.thoughts-header {
-    text-align: center;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-}
-
-.thoughts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.thought-card {
-    background: $background-color;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(139, 115, 85, 0.05);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid $heading-border-color;
-    overflow: hidden;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    &:hover {
-        transform: translateY(-2px);
-        border-color: $brand-color;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-
-        .thought-image {
-            transform: scale(1.05);
-        }
-    }
-}
-
-/*.thought-image-container {
-    width: 100%;
-    padding-top: 56.25%;
-    position: relative;
-    overflow: hidden;
-}
-
-.thought-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    }*/
-
-.thought-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.thought-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: $grey-color;
-    font-size: 0.95rem;
-    margin-bottom: 0.8rem;
-
-    .meta-left,
-    .meta-right {
-        display: flex;
-        align-items: center;
-    }
-
-    .meta-icon {
-        margin-right: 0.25rem;
-        flex-shrink: 0;
-        stroke: $grey-color;
-    }
-}
-
-.update-date,
-.reading-time {
-    display: flex;
-    align-items: center;
-    color: $grey-color;
-    font-size: 0.9rem;
-    gap: 0.5rem;
-}
-
-.thought-title {
-    margin: 0 0 1rem 0;
-
-    a {
-        color: $brand-color;
-        font-size: 1.5rem;
-        text-decoration: none;
-        font-weight: 600;
-        line-height: 1.3;
-        transition: opacity 0.3s ease;
-
-        &:hover {
-            opacity: 0.85;
-        }
-    }
-}
-
-.thought-excerpt {
-    color: $text-color;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    opacity: 0.85;
-}
-
-.thought-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
-    gap: 1rem;
-
-    .categories {
-        display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-    }
-
-    .read-more {
-        white-space: nowrap;
-        margin-left: auto;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-
-        .arrow-icon {
-            transition: transform 0.2s ease;
-        }
-
-        &:hover .arrow-icon {
-            transform: translateX(3px);
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .thought-meta {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.5rem;
-    }
-
-    .thought-footer {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .read-more {
-            margin-left: 0;
-            margin-top: 0.5rem;
-        }
-    }
-
-    .thoughts-grid {
-        grid-template-columns: 1fr;
     }
 }
 
