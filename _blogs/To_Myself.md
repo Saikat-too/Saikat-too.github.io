@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "A writting to myself"
+title: "A writing to myself"
 date: 2025-07-31 10:42:00 +0600
 categories: [myself , inspiration]
 ---
@@ -28,4 +28,4 @@ Top tips of Stephen King that I feel useful and can be mapped with other life sc
 
 3. Don't wast time pleasing people . Rudeness is the least of your problems . Every decent writer is accused of being a waste of talent . If anybody disapprove any of my work , I can't do anything about it . It is what I have . Write for yourself , for you happiness . Do it for the joy of doing it , then the creativity will appear from inside .
 
-4. Most difficult first . Most important thing is the hardest one to write . You can feel ashamed thinking how will I decribe such a great thing in words . But do it with great passion , love and time . Take your time to craft it into a beautiful piece of art .
+4. Most difficult first . Most important topic/story is the hardest one to write . You can feel ashamed thinking how will I decribe such a great topic or story in words . But do it with great passion , love and time . Take your time to craft it into a beautiful piece of art .
