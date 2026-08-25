@@ -9,7 +9,7 @@ categories: [cuda, gpu-programming, parallel-computing]
 
 Reduction is an important mathematical operation in parallel computing. A reduction derives a single value from an array of values (like a sum, maximum, or average). It can be performed by sequentially going through every element of the array.
 
-In this blog, we will look at different parallel reduction techniques in CUDA and compare the kernel execution times against PyTorch.
+In this blog, we will look at different parallel reduction techniques in CUDA and compare the kernel execution times against PyTorch.I ran all the kernel execution and benchmarking on a **Google Colab T4 GPU**. 
 
 # Kernel 1: Reduction Trees
 
