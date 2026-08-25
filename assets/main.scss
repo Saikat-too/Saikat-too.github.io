@@ -1215,3 +1215,40 @@ body,
         }
     }
 }
+
+
+// Responsive tables for blog posts
+.blog-post {
+    table {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-collapse: collapse;
+        margin-bottom: 1.5rem;
+    }
+
+    th,
+    td {
+        padding: 0.5rem 0.75rem;
+        border: 1px solid $grey-color-light;
+        white-space: nowrap;
+    }
+
+    th {
+        background-color: $grey-color-light;
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 600px) {
+        table {
+            font-size: 0.8rem;
+        }
+
+        th,
+        td {
+            padding: 0.4rem 0.5rem;
+        }
+    }
+}
