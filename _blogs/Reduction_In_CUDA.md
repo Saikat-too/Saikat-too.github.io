@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: "Reduction in CUDA"
-date: 2025-08-24 10:42:00 +0600
+date: 2026-08-24 10:42:00 +0600
 categories: [cuda, gpu-programming, parallel-computing]
 ---
 
