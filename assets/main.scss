@@ -659,73 +659,122 @@ body,
     line-height: 1.6;
 }
 
-.posts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
+.posts-list {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3rem;
 }
 
-.post-card {
-    background: $background-color;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(139, 115, 85, 0.05);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid $heading-border-color;
-    overflow: hidden;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.post-item {
+    padding: 1.75rem 0;
 
-    &:hover {
-        transform: translateY(-2px);
-        border-color: $brand-color;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    .post-date {
+        color: $grey-color;
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
 
-        .post-image {
-            transform: scale(1.05);
+    .post-title {
+        margin: 0;
+
+        a {
+            color: $brand-color;
+            font-size: 1.6rem;
+            text-decoration: none;
+            font-weight: 500;
+            line-height: 1.3;
+            transition: opacity 0.2s ease;
+
+            &:hover {
+                opacity: 0.75;
+                text-decoration: none;
+            }
         }
     }
 }
 
-.post-content {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.post-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: $grey-color;
-    font-size: 0.95rem;
-    margin-bottom: 0.8rem;
-
-    .meta-left,
-    .meta-right {
-        display: flex;
-        align-items: center;
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.5rem;
     }
-}
 
-.post-title {
-    margin: 0 0 1rem 0;
+    .post-item {
+        padding: 1.25rem 0;
 
-    a {
-        color: $brand-color;
-        font-size: 1.5rem;
-        text-decoration: none;
-        font-weight: 600;
-        line-height: 1.3;
-        transition: opacity 0.3s ease;
-
-        &:hover {
-            opacity: 0.85;
+        .post-title a {
+            font-size: 1.3rem;
         }
     }
 }
+
+// Card style post
+// .posts-grid {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+//     gap: 2rem;
+//     margin-bottom: 3rem;
+// }
+
+// .post-card {
+//     background: $background-color;
+//     border-radius: 12px;
+//     box-shadow: 0 4px 12px rgba(139, 115, 85, 0.05);
+//     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+//     border: 1px solid $heading-border-color;
+//     overflow: hidden;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+
+//     &:hover {
+//         transform: translateY(-2px);
+//         border-color: $brand-color;
+//         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+//         .post-image {
+//             transform: scale(1.05);
+//         }
+//     }
+// }
+
+// .post-content {
+//     padding: 1.5rem;
+//     display: flex;
+//     flex-direction: column;
+//     flex-grow: 1;
+// }
+
+// .post-meta {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     color: $grey-color;
+//     font-size: 0.95rem;
+//     margin-bottom: 0.8rem;
+
+//     .meta-left,
+//     .meta-right {
+//         display: flex;
+//         align-items: center;
+//     }
+// }
+
+// .post-title {
+//     margin: 0 0 1rem 0;
+
+//     a {
+//         color: $brand-color;
+//         font-size: 1.5rem;
+//         text-decoration: none;
+//         font-weight: 600;
+//         line-height: 1.3;
+//         transition: opacity 0.3s ease;
+
+//         &:hover {
+//             opacity: 0.85;
+//         }
+//     }
+// }
 
 .post-excerpt {
     color: $text-color;
@@ -1115,11 +1164,13 @@ body,
         padding: 0 0.5rem;
     }
 
-    .posts-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-    }
+
+
+    // .posts-grid {
+    //     grid-template-columns: 1fr;
+    //     gap: 1rem;
+    //     margin-bottom: 1.5rem;
+    // }
 
     .thoughts-grid {
         grid-template-columns: 1fr;
