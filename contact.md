@@ -7,7 +7,7 @@ permalink: /contact/
 <div class="contact-container">
   <header class="contact-header">
     <h1 class="page-title">Contact Me</h1>
-    <p class="page-description">Hey , I am always open to to connecting , collaborating or simply talking about random things. Feel free to reach out ! </p>
+    <p class="page-description">Hey , I am always open to connect, collaborate or simply talking about random things. Feel free to reach out ! </p>
   </header>
 
   <div class="contact-grid">
